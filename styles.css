@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+body, html{
+    background: hsl(0, 0%, 95%);
+    height: 100%;
+}
+
+h1{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+button{
+    background: hsl(0, 0%, 95%);
+    padding: 3px;
+    width: 50%;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+p, button{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    margin-bottom: 85px;
+    line-height: 25px;
+}
+
+.article-sedan{
+    background: hsl(31, 77%, 52%);
+    border-radius: 5px 0 0 5px;
+}
+
+.article-suv{
+    background: hsl(184, 100%, 22%);
+}
+
+.article-luxury{
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 5px 5px 0;
+}
+
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+article{
+    width: 25%;
+    padding: 30px;
+    height: 80%;
+}
+
+img{
+    margin-bottom: 25px;
+}
+
+main{
+    height: 90%;
+}
+
+footer{
+    height: 10%;
+    text-align: center;
+}
+
+.btn-sedan{
+    color: hsl(31, 77%, 52%);;
+}
+
+.btn-suv{
+    color: hsl(184, 100%, 22%);;
+}
+
+.btn-luxury{
+    color: hsl(179, 100%, 13%);;
+}
+
+button:hover{
+    border: solid hsl(0, 0%, 95%);
+    background: none;
+    color: hsl(0, 0%, 95%);
+}
+
+
+.attribution p{
+    color: #3a015c;
+}
+
+
+.attribution a{
+    text-decoration: underline wavy #00b4d8;
+    color: #00b4d8;
+    transition: all 0.3s
+}
+
+.attribution a:hover{
+    transition: all, 0.3s ;
+    color: #f72585;
+    text-decoration: underline wavy #f72585;
+}
+
+@media (max-width: 900px){
+    h1{
+        margin-bottom: 35px;
+    }
+    main{
+        height: fit-content;
+    }
+    .container{
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+    article{
+        width: 80%;
+        padding: 30px;
+        
+    }
+    .article-sedan{
+        border-radius: 5px 5px 0 0;
+    }
+    
+    .article-luxury{
+        border-radius: 0 0 5px 5px;
+    }
+    p{
+        margin-bottom: 35px;
+        line-height: 30px;
+    }
+}
