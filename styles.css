@@ -11,7 +11,7 @@ body, html{
     height: 100%;
 }
 
-h1{
+h2{
     color: hsl(0, 0%, 95%);
     font-family: 'Big Shoulders Display', cursive;
     margin-bottom: 25px;
@@ -26,6 +26,10 @@ button{
     border-radius: 30px;
     border: none;
     cursor: pointer;
+}
+
+.title-section{
+    display: none;
 }
 
 p, button{
@@ -118,7 +122,7 @@ button:hover{
 }
 
 @media (max-width: 900px){
-    h1{
+    h2{
         margin-bottom: 20px;
     }
     main{
